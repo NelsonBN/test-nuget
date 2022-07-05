@@ -7,7 +7,7 @@
         /// </summary>
         public static bool IsNegative(int number)
         {
-            if(number < -1)
+            if(number < 0)
             {
                 return true;
             }
@@ -29,7 +29,7 @@
         public static string GetCustomFrameworkVersion()
 #if NET6_0_OR_GREATER
             => ".NET 6.0 or greater";
-#elif NET5_0
+#elif NET5_0_OR_GREATER
         => ".NET 5.0";
 #else
         => "Undefined";
