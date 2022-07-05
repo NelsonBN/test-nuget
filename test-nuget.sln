@@ -36,6 +36,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.samples", "4.samples", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNuget.PleaseDontUse.Samples", "samples\TestNuget.PleaseDontUse.Samples.csproj", "{D338DC03-CD80-4FC7-9650-E488113B8268}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IssueTemplates", "IssueTemplates", "{A8F17538-F27C-4F99-9539-CD6659A106C8}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\bug-report.yml = .github\ISSUE_TEMPLATE\bug-report.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +67,7 @@ Global
 		{F404A345-4386-4A9F-B965-9ECE31B0F2A1} = {55E5F216-B861-4D35-BB1E-F556D74B7CFB}
 		{1656AE36-FA0F-4D4C-A065-048FD5E469E8} = {9F501F74-3A4F-4518-9E6D-8C6331CA71F7}
 		{D338DC03-CD80-4FC7-9650-E488113B8268} = {46A2B6C6-7EF0-45DE-AC0E-3F5207432343}
+		{A8F17538-F27C-4F99-9539-CD6659A106C8} = {0439ABEE-B2CC-4ABC-8348-343635F778D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FF4655A-7E62-4FAB-AEAF-E26BD4A72495}
