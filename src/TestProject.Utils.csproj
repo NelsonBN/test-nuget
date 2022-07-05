@@ -43,9 +43,9 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/NelsonBN/test-nuget</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <!--  <EmbedUntrackedSources>true</EmbedUntrackedSources> -->
+    <!--  <IncludeSymbols>true</IncludeSymbols> -->
+    <!--  <SymbolPackageFormat>snupkg</SymbolPackageFormat> -->
   </PropertyGroup>
   
   
