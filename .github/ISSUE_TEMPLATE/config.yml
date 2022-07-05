@@ -1,5 +1,5 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links: 
   - name: General support and usage questions
     url: "https://github.com/NelsonBN/test-nuget/blob/main/CODE_OF_CONDUCT.md"
-    about: Please ask and answer questions as a discussion thread
+    about: Please open an issue for general support request
