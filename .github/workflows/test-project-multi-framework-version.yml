@@ -1,0 +1,47 @@
+name: 'Tests Multi Frameworks'
+
+
+
+on:
+  workflow_dispatch: # To can dispatch manually
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - main
+
+
+
+env:
+  SDK_VERSION: '6.0.301'
+
+
+
+jobs:
+
+  test-project:
+    name: "Test nuget"
+    
+    strategy:
+      matrix:
+        os: ['ubuntu-18.04', 'ubuntu-latest']
+        version: ['6.0.301', ' 5.0.301']
+      
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v3
+
+    - name: "Setup .NET"
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ matrix.version }}
+
+    - name: "Restore dependencies"
+      run: dotnet restore
+
+    - name: "Build"
+      run: dotnet build --configuration Release --no-restore
+
+    - name: "Test"
+      run: dotnet test --configuration Release --no-build --verbosity normal --logger "console;verbosity=detailed"

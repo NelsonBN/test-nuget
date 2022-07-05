@@ -6,8 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{01A6F5CC-3325-4B59-BE21-27486FF8816D}"
 	ProjectSection(SolutionItems) = preProject
 		.github\dependabot.yml = .github\dependabot.yml
-		.github\workflows\test-project.yml = .github\workflows\test-project.yml
 		.github\workflows\deploy-nuget-github.yml = .github\workflows\deploy-nuget-github.yml
+		.github\workflows\test-project-multi-framework-version.yml = .github\workflows\test-project-multi-framework-version.yml
+		.github\workflows\test-project.yml = .github\workflows\test-project.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.project", "1.project", "{0439ABEE-B2CC-4ABC-8348-343635F778D2}"
