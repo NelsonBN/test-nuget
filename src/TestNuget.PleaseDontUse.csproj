@@ -50,7 +50,7 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <Deterministic>true</Deterministic>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <!--<SymbolPackageFormat>snupkg</SymbolPackageFormat>-->
     <!--<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>-->
     <DebugType>embedded</DebugType>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
