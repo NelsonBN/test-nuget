@@ -1,4 +1,4 @@
-name: 'Publish nuget'
+name: 'Publish nuget to GitHub'
 
 
 
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # To can dispatch manually
   push:
     branches:
-      - main # TODO: testing
+      - main
     paths:
       - "src/**" # Only run when exists changes in source code
 
