@@ -19,7 +19,7 @@
     <PackageId>TestProject.Utils</PackageId>
     <title>TestProject.Utils</title>
     <Product>TestProject.Utils</Product>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>NelsonBN</Company>
@@ -32,20 +32,25 @@
     <PackageReleaseNotes>https://github.com/NelsonBN/test-nuget/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Test project to create a nuget</Summary>
     <PackageTags>TestProject;Utils;NuGet</PackageTags>
-    <RepositoryUrl>https://github.com/NelsonBN/test-nuget</RepositoryUrl>
     <PackageProjectUrl>https://github.com/NelsonBN/test-nuget</PackageProjectUrl>
     <NeutralLanguage>en-GB</NeutralLanguage>
 
     <PackageOutputPath>bin\</PackageOutputPath>
   </PropertyGroup>
 
-
+  
+  <PropertyGroup>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/NelsonBN/test-nuget</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+  
+  
   <!-- DOCUMENTATION -->
   <PropertyGroup>
     <DocumentationFile>bin\TestProject.Utils.xml</DocumentationFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>$(NoWarn);1591</NoWarn>
-    <!-- Prevent XML documentation warnings -->
+    <NoWarn>$(NoWarn);1591</NoWarn> <!-- Prevent XML documentation warnings -->
   </PropertyGroup>
 
 
@@ -77,6 +82,10 @@
 
   <ItemGroup>
     <None Include="..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
