@@ -72,16 +72,6 @@ body:
       required: false
 
 
-  - type: textarea
-    id: dotnet-sdk-version
-    attributes:
-      label: AWS .NET SDK and/or Package version used
-      description: NuGet Packages used
-      placeholder: AWSSDK.S3 3.7.8.13
-    validations:
-      required: true
-
-
   - type: input
     id: nuget-version-used
     attributes:
