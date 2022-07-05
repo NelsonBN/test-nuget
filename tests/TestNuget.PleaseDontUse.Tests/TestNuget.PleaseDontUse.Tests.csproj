@@ -40,7 +40,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TestProject.Utils.csproj" />
+    <ProjectReference Include="..\..\src\TestNuget.PleaseDontUse.csproj" />
   </ItemGroup>
 
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using TestNuget.PleaseDontUse;
 
 namespace TestProject.Utils.Samples
 {
