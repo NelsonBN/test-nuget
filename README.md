@@ -16,3 +16,4 @@ https://github.com/dotnet/sourcelink
 
 ## tests multi frameworks
 https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs
+https://devblogs.microsoft.com/dotnet/dotnet-loves-github-actions/
