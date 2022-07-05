@@ -11,6 +11,7 @@ https://docs.github.com/en/packages/working-with-a-github-packages-registry/work
 
 
 ## sourcelink
+https://docs.microsoft.com/pt-br/dotnet/standard/library-guidance/sourcelink
 https://github.com/dotnet/sourcelink
 https://devblogs.microsoft.com/dotnet/improving-debug-time-productivity-with-source-link/
 

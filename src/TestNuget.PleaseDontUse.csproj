@@ -1,44 +1,48 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <!-- Assembly details -->
   <PropertyGroup>
-    <ProjectGuid>{E06D8F3D-6B30-45B3-B696-04DB18A0E255}</ProjectGuid>
-
-    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
-
+    <ProjectGuid>f404a345-4386-4a9f-b965-9ece31b0f2a1</ProjectGuid>
 
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
     <TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
 
 
-    <RootNamespace>TestProject.Utils</RootNamespace>
-    <AssemblyName>TestProject.Utils</AssemblyName>
+    <RootNamespace>TestNuget.PleaseDontUse</RootNamespace>
+    <AssemblyName>TestNuget.PleaseDontUse</AssemblyName>
+
+    <Version>1.2.0</Version>
+  </PropertyGroup>
 
 
-    <!-- Package details -->
-    <PackageId>TestProject.Utils</PackageId>
-    <title>TestProject.Utils</title>
-    <Product>TestProject.Utils</Product>
-    <Version>1.1.8</Version>
+  <!-- Package details -->
+  <PropertyGroup>
+    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
+    
+    <PackageId>TestNuget.PleaseDontUse</PackageId>
+    <title>TestNuget.PleaseDontUse</title>
+    <Product>TestNuget.PleaseDontUse</Product>
 
     <Authors>Nelson Nobre</Authors>
     <Company>NelsonBN</Company>
 
     <License>MIT</License>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Copyright>Copyright © $(CurrentYear) by TechNobre</Copyright>
+    <Copyright>Copyright © $(CurrentYear) by NelsonBN</Copyright>
 
-    <Description>Test project to create a nuget</Description>
+    <Description>Test project to create a nuget. Please don't use this project</Description>
     <PackageReleaseNotes>https://github.com/NelsonBN/test-nuget/blob/main/CHANGELOG.md</PackageReleaseNotes>
-    <Summary>Test project to create a nuget</Summary>
-    <PackageTags>TestProject;Utils;NuGet</PackageTags>
+    <Summary>Test project to create a nuget. Please don't use this project</Summary>
+    <PackageTags>TestNuget;NuGet;PleaseDontUse</PackageTags>
     <PackageProjectUrl>https://github.com/NelsonBN/test-nuget</PackageProjectUrl>
     <NeutralLanguage>en-GB</NeutralLanguage>
 
     <PackageOutputPath>bin\</PackageOutputPath>
   </PropertyGroup>
 
-  
+
+  <!-- Source link -->
   <PropertyGroup>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/NelsonBN/test-nuget</RepositoryUrl>
@@ -53,9 +57,9 @@
   </PropertyGroup>
 
 
-  <!-- DOCUMENTATION -->
+  <!-- Documentation -->
   <PropertyGroup>
-    <DocumentationFile>bin\TestProject.Utils.xml</DocumentationFile>
+    <DocumentationFile>bin\TestProject.PleaseDontUse.xml</DocumentationFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn> <!-- Prevent XML documentation warnings -->
   </PropertyGroup>

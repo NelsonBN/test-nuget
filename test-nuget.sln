@@ -6,8 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{01A6F5CC-3325-4B59-BE21-27486FF8816D}"
 	ProjectSection(SolutionItems) = preProject
 		.github\dependabot.yml = .github\dependabot.yml
-		.github\workflows\deploy-nuget-github.yml = .github\workflows\deploy-nuget-github.yml
 		.github\workflows\test-project.yml = .github\workflows\test-project.yml
+		.github\workflows\publish-to-github-packages.yml = .github\workflows\publish-to-github-packages.yml
+		.github\workflows\publish-to-nuget-org.yml = .github\workflows\publish-to-nuget-org.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.project", "1.project", "{0439ABEE-B2CC-4ABC-8348-343635F778D2}"
@@ -24,13 +25,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.src", "3.src", "{55E5F216
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.tests", "5.tests", "{9F501F74-3A4F-4518-9E6D-8C6331CA71F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject.Utils", "src\TestProject.Utils.csproj", "{E06D8F3D-6B30-45B3-B696-04DB18A0E255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNuget.PleaseDontUse", "src\TestNuget.PleaseDontUse.csproj", "{F404A345-4386-4A9F-B965-9ECE31B0F2A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject.Utils.Tests", "tests\TestProject.Utils.Tests\TestProject.Utils.Tests.csproj", "{1656AE36-FA0F-4D4C-A065-048FD5E469E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNuget.PleaseDontUse.Tests", "tests\TestNuget.PleaseDontUse.Tests\TestNuget.PleaseDontUse.Tests.csproj", "{1656AE36-FA0F-4D4C-A065-048FD5E469E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.samples", "4.samples", "{46A2B6C6-7EF0-45DE-AC0E-3F5207432343}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject.Utils.Samples", "samples\TestProject.Utils.Samples.csproj", "{D338DC03-CD80-4FC7-9650-E488113B8268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNuget.PleaseDontUse.Samples", "samples\TestNuget.PleaseDontUse.Samples.csproj", "{D338DC03-CD80-4FC7-9650-E488113B8268}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,10 +39,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E06D8F3D-6B30-45B3-B696-04DB18A0E255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E06D8F3D-6B30-45B3-B696-04DB18A0E255}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E06D8F3D-6B30-45B3-B696-04DB18A0E255}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E06D8F3D-6B30-45B3-B696-04DB18A0E255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F404A345-4386-4A9F-B965-9ECE31B0F2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F404A345-4386-4A9F-B965-9ECE31B0F2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F404A345-4386-4A9F-B965-9ECE31B0F2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F404A345-4386-4A9F-B965-9ECE31B0F2A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1656AE36-FA0F-4D4C-A065-048FD5E469E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1656AE36-FA0F-4D4C-A065-048FD5E469E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1656AE36-FA0F-4D4C-A065-048FD5E469E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,7 +56,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E06D8F3D-6B30-45B3-B696-04DB18A0E255} = {55E5F216-B861-4D35-BB1E-F556D74B7CFB}
+		{F404A345-4386-4A9F-B965-9ECE31B0F2A1} = {55E5F216-B861-4D35-BB1E-F556D74B7CFB}
 		{1656AE36-FA0F-4D4C-A065-048FD5E469E8} = {9F501F74-3A4F-4518-9E6D-8C6331CA71F7}
 		{D338DC03-CD80-4FC7-9650-E488113B8268} = {46A2B6C6-7EF0-45DE-AC0E-3F5207432343}
 	EndGlobalSection
