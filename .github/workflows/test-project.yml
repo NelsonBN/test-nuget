@@ -19,7 +19,7 @@ env:
 jobs:
 
   test-project:
-    name: "Test nuget job"
+    name: "Test nuget"
     runs-on: ubuntu-latest
 
     steps:
