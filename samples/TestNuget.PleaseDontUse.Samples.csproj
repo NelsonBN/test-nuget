@@ -6,12 +6,6 @@
 
     <RootNamespace>TestProject.Utils.Samples</RootNamespace>
     <AssemblyName>TestProject.Utils.Samples</AssemblyName>
-
-    <!-- BIN OUTPUT -->
-    <OutputPath>bin</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-
-    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
