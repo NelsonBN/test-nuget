@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{01A6F5
 		.github\dependabot.yml = .github\dependabot.yml
 		.github\workflows\publish-to-github-packages.yml = .github\workflows\publish-to-github-packages.yml
 		.github\workflows\publish-to-nuget-org.yml = .github\workflows\publish-to-nuget-org.yml
+		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
 		.github\workflows\test-project.yml = .github\workflows\test-project.yml
 	EndProjectSection
 EndProject
