@@ -4,7 +4,6 @@ name: 'Publish nuget'
 
 on:
   workflow_dispatch: # To can dispatch manually
-      - main # TODO: testing
   push:
     branches:
       - main # TODO: testing
@@ -34,9 +33,6 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: ${{ env.SDK_VERSION }}
-        source-url: ${{ env.NUGET_SERVER }}
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
     - name: "Restore dependencies"
       run: dotnet restore
