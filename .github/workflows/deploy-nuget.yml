@@ -3,16 +3,19 @@ name: 'Publish nuget'
 
 
 on:
+  workflow_dispatch: # To can dispatch manually
   push:
     branches:
       - main # TODO: testing
+    paths:
+      - "src/**" # Only run when exists changes in source code
 
 
 
 env:
   SDK_VERSION: '6.0.301'
   PACKAGE_PATH: ./src/**/*.nupkg
-  NUGET_SERVER: https://nuget.pkg.github.com/nelsonbn/index.json
+  NUGET_SERVER: https://nuget.pkg.github.com/NelsonBN/index.json
 
 
 
@@ -30,9 +33,6 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: ${{ env.SDK_VERSION }}
-        source-url: ${{ env.NUGET_SERVER }}
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
     - name: "Restore dependencies"
       run: dotnet restore

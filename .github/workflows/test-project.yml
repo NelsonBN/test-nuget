@@ -3,6 +3,7 @@ name: 'Tests'
 
 
 on:
+  workflow_dispatch: # To can dispatch manually
   pull_request:
     types: [opened, reopened, synchronize]
     branches:
@@ -37,4 +38,4 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: "Test"
-      run: dotnet test --configuration Release --no-build --verbosity normal
+      run: dotnet test --configuration Release --no-build --verbosity normal --logger "console;verbosity=detailed"
