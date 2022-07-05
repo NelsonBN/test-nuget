@@ -1,16 +1,43 @@
-﻿namespace TestProject.Utils.Tests;
+﻿using FluentAssertions;
+using Xunit;
+using Xunit.Abstractions;
 
-public class ExampleUtilsTests
+namespace TestProject.Utils.Tests
 {
-    [Fact]
-    public void Request_GetAssemblyVersion_AssemblyVersion()
+    public class ExampleUtilsTests
     {
-        // Arrange && Act
-        var act = ExampleUtils.GetCustomVersion();
+        private readonly ITestOutputHelper _output;
+
+        public ExampleUtilsTests(ITestOutputHelper output)
+            => _output = output;
+
+        [Fact]
+        public void Request_GetAssemblyVersion_String()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.GetCustomVersion();
 
 
-        // Assert
-        act.Should()
-            .NotBeNullOrWhiteSpace();
+            // Assert
+            _output.WriteLine($"{nameof(ExampleUtils.GetCustomVersion)}: {act}");
+
+            act.Should()
+                .NotBeNullOrWhiteSpace();
+        }
+
+
+        [Fact]
+        public void Request_GetCustomFrameworkVersion_String()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.GetCustomFrameworkVersion();
+
+
+            // Assert
+            _output.WriteLine($"{nameof(ExampleUtils.GetCustomFrameworkVersion)}: {act}");
+
+            act.Should()
+                .NotBeNullOrWhiteSpace();
+        }
     }
 }
