@@ -7,7 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{01A6F5
 	ProjectSection(SolutionItems) = preProject
 		.github\dependabot.yml = .github\dependabot.yml
 		.github\workflows\deploy-nuget-github.yml = .github\workflows\deploy-nuget-github.yml
-		.github\workflows\test-project-multi-framework-version.yml = .github\workflows\test-project-multi-framework-version.yml
 		.github\workflows\test-project.yml = .github\workflows\test-project.yml
 	EndProjectSection
 EndProject
