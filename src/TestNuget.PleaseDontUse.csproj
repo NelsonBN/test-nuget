@@ -12,7 +12,7 @@
     <RootNamespace>TestNuget.PleaseDontUse</RootNamespace>
     <AssemblyName>TestNuget.PleaseDontUse</AssemblyName>
 
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
   </PropertyGroup>
 
 
@@ -51,7 +51,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <Deterministic>true</Deterministic>
     <!--<SymbolPackageFormat>snupkg</SymbolPackageFormat>-->
-    <!--<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>-->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <DebugType>embedded</DebugType>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
