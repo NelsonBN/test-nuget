@@ -39,6 +39,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IssueTemplates", "IssueTemplates", "{A8F17538-F27C-4F99-9539-CD6659A106C8}"
 	ProjectSection(SolutionItems) = preProject
 		.github\ISSUE_TEMPLATE\bug-report.yml = .github\ISSUE_TEMPLATE\bug-report.yml
+		.github\ISSUE_TEMPLATE\documentation.yml = .github\ISSUE_TEMPLATE\documentation.yml
+		.github\ISSUE_TEMPLATE\feature-request.yml = .github\ISSUE_TEMPLATE\feature-request.yml
 	EndProjectSection
 EndProject
 Global
