@@ -12,7 +12,9 @@ on:
 
 
 env:
-  SDK_VERSION: '6.0.301'
+  SDK_VERSION_6: '6.0.301'
+  SDK_VERSION_5: '6.0.301'
+  SDK_VERSION_3: '6.0.301'
 
 
 
@@ -20,22 +22,26 @@ jobs:
 
   test-project:
     name: "Test nuget"
-    
-    strategy:
-      matrix:
-        os: ['ubuntu-18.04', 'ubuntu-latest']
-        version: ['6.0.301']
-      
-    runs-on: ${{ matrix.os }}
+    runs-on: 'ubuntu-latest'
 
     steps:
     - name: "Checkout"
       uses: actions/checkout@v3
 
-    - name: "Setup .NET"
+    - name: "Setup .NET 6.0"
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: ${{ matrix.version }}
+        dotnet-version: ${{ env.SDK_VERSION_6 }}
+
+    - name: "Setup .NET 5.0"
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.SDK_VERSION_5 }}
+
+    - name: "Setup .NET 3.1"
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.SDK_VERSION_3 }}
 
     - name: "Restore dependencies"
       run: dotnet restore

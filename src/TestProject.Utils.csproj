@@ -19,7 +19,7 @@
     <PackageId>TestProject.Utils</PackageId>
     <title>TestProject.Utils</title>
     <Product>TestProject.Utils</Product>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>NelsonBN</Company>
@@ -43,6 +43,9 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/NelsonBN/test-nuget</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   
   
