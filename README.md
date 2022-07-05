@@ -12,6 +12,7 @@ https://docs.github.com/en/packages/working-with-a-github-packages-registry/work
 
 ## sourcelink
 https://github.com/dotnet/sourcelink
+https://devblogs.microsoft.com/dotnet/improving-debug-time-productivity-with-source-link/
 
 
 ## tests multi frameworks
