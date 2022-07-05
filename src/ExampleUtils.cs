@@ -3,11 +3,24 @@
     public static class ExampleUtils
     {
         /// <summary>
+        /// Chech if the number is negative
+        /// </summary>
+        public static bool IsNegative(int number)
+        {
+            if(number < -1)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
         /// Get custom version
         /// </summary>
         /// <returns>Assembly version</returns>
         public static string GetCustomVersion()
-            => "1.3.2";
+            => "1.4.0";
 
         /// <summary>
         /// Get custom framework version

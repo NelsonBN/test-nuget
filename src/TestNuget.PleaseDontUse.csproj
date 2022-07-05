@@ -12,7 +12,7 @@
     <RootNamespace>TestNuget.PleaseDontUse</RootNamespace>
     <AssemblyName>TestNuget.PleaseDontUse</AssemblyName>
 
-    <Version>1.3.2</Version>
+    <Version>1.4.0</Version>
     
     <PackageOutputPath>bin\</PackageOutputPath>
   </PropertyGroup>
@@ -42,19 +42,20 @@
     
     <PackageIcon>logo_128x128.png</PackageIcon>
     <PackageReadmeFile>nuget.org.md</PackageReadmeFile>
+
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/NelsonBN/test-nuget</RepositoryUrl>
   </PropertyGroup>
 
 
   <!-- Source link -->
   <PropertyGroup>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/NelsonBN/test-nuget</RepositoryUrl>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <IncludeSymbols Condition=" '$(DebugType)' != 'embedded' ">true</IncludeSymbols>
     <Deterministic>true</Deterministic>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols Condition=" '$(DebugType)' != 'embedded' ">true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
 
