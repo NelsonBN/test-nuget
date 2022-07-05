@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links: 
   - name: General support and usage questions
-    url: "https://github.com/NelsonBN/test-nuget/blob/main/CODE_OF_CONDUCT.md"
+    url: "https://github.com/NelsonBN/test-nuget/issues/new"
     about: Please open an issue for general support request
