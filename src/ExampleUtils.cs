@@ -7,12 +7,12 @@
         /// </summary>
         /// <returns>Assembly version</returns>
         public static string GetCustomVersion()
-            => "1.3.0";
+            => "1.3.1";
 
         /// <summary>
         /// Get custom framework version
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Custom framework version</returns>
         public static string GetCustomFrameworkVersion()
 #if NET6_0_OR_GREATER
             => ".NET 6.0 or greater";
