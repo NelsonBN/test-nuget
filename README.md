@@ -28,15 +28,40 @@ https://github.com/conventional-changelog/commitlint
 
 
 
--------
-https://github.com/commitizen/cz-cli
+
+
+--------
+```bash
+npm init -y
+npm install husky --save-dev
+npx husky-init
+npx husky add .husky/commit-msg 'echo "TODO"'
+```
+
+```bash
+#!/usr/bin/env sh
+if ! head -1 "$1" | grep -qE "^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\(.+?\))?: .{1,}$"; then
+    echo "Aborting commit. Your commit message is invalid. See some examples below:" >&2
+    echo "feat(logging): added logs for failed signups" >&2
+    echo "fix(homepage): fixed image gallery" >&2
+    echo "test(homepage): updated tests" >&2
+    echo "docs(readme): added new logging table information" >&2
+    echo "For more information check https://www.conventionalcommits.org/en/v1.0.0/ for more details" >&2
+    exit 1
+fi
+if ! head -1 "$1" | grep -qE "^.{1,89}$"; then
+    echo "Aborting commit. Your commit message is too long. Max length is 89 characters" >&2
+    exit 1
+fi
+```
 
 ```bash
 npm install -g commitizen
-npm init -y
 commitizen init cz-conventional-changelog --save-dev --save-exact --force
+npx husky add .husky/prepare-commit-msg "exec < /dev/tty && git cz --hook || true”
 ```
 
+https://github.com/commitizen/cz-cli
 
 
 https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits
@@ -84,15 +109,10 @@ npm install --save-dev @commitlint/config-conventional @commitlint/cli
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 
 
-npm install husky --save-dev
+
 ```
 
 
 
 
 
-
-npm init -y
-npx husky-init
-
-npx husky add .husky/commit-msg 'echo "pre."'
