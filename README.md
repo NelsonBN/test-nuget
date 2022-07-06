@@ -22,7 +22,8 @@ https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs
 https://devblogs.microsoft.com/dotnet/dotnet-loves-github-actions/
 
 
-
+## Commits pattern
+https://github.com/conventional-changelog/commitlint
 
 
 
@@ -43,7 +44,6 @@ https://marketplace.visualstudio.com/items?itemName=mrluje.vs-commitizen
 
 
 ```bash
-npm install husky
 npm install --save-dev husky
 # npx semantic-release-cli setup
 ```
@@ -71,3 +71,9 @@ https://semantic-release.gitbook.io/semantic-release/
 https://semantic-release.gitbook.io/semantic-release/support/faq#how-can-i-change-the-type-of-commits-that-trigger-a-release
 
 https://github.com/angular/angular/blob/main/CONTRIBUTING.md
+
+
+```sh
+npm install --save-dev @commitlint/config-conventional @commitlint/cli
+echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+```
