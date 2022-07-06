@@ -75,5 +75,8 @@ https://github.com/angular/angular/blob/main/CONTRIBUTING.md
 
 ```sh
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
+
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+
+npm install husky --save-dev
 ```
