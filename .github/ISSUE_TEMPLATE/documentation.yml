@@ -1,9 +1,11 @@
 ---
-name: "📕 Documentation issue"
-description: Report an issue in the documentation
-title: "(short issue description)"
+name: "📕 Documentation issue or suggestion"
+description: Report an issue or a suggestion for documentation
+title: "(Short description)"
 labels: [documentation]
 assignees: []
+
+
 
 body:
   - type: textarea
