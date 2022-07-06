@@ -83,5 +83,14 @@ npm install --save-dev @commitlint/config-conventional @commitlint/cli
 
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 
+
 npm install husky --save-dev
 ```
+
+
+
+
+npm init -y
+npx husky-init
+
+npx husky add .husky/commit-msg 'echo "pre."'

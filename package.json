@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
   "repository": {
@@ -19,21 +20,8 @@
   "bugs": {
     "url": "https://github.com/NelsonBN/test-nuget/issues"
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
-    }
-  },
   "homepage": "https://github.com/NelsonBN/test-nuget#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "husky": "^8.0.0"
   }
 }
