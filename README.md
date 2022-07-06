@@ -1,6 +1,7 @@
 # test-nuget
 Test nuget project
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Conditional compilation
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives
@@ -32,8 +33,19 @@ https://github.com/commitizen/cz-cli
 ```bash
 npm install -g commitizen
 npm init -y
-commitizen init cz-conventional-changelog --save-dev --save-exact
+commitizen init cz-conventional-changelog --save-dev --save-exact --force
+```
+
+
+
+https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits
+https://marketplace.visualstudio.com/items?itemName=mrluje.vs-commitizen
+
+
+```bash
 npm install husky
+npm install --save-dev husky
+# npx semantic-release-cli setup
 ```
 
 
@@ -54,5 +66,8 @@ on package.json:
 https://semver.org/
 
 
+
 https://semantic-release.gitbook.io/semantic-release/
 https://semantic-release.gitbook.io/semantic-release/support/faq#how-can-i-change-the-type-of-commits-that-trigger-a-release
+
+https://github.com/angular/angular/blob/main/CONTRIBUTING.md

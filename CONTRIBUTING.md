@@ -8,10 +8,10 @@ Here are some helpful guidelines to keep in mind when contributing. While follow
 1. Check if there is already an open issue for the subject;
 2. Open an issue to discuss the new feature;
 3. Fork this repository;
-4. Create your feature branch: `git checkout -b feature/my-new-feature`;
+4. Create your feature branch: `git checkout -b feat/my-new-feature`;
 5. Add files changed:  `git add --all`;
 6. Commit your changes: `git commit -m "Add some feature"`;
-7. Push to the branch: `git push origin feature/my-new-feature`;
+7. Push to the branch: `git push origin feat/my-new-feature`;
 8. Submit a pull request;
 
 
