@@ -26,6 +26,13 @@ https://devblogs.microsoft.com/dotnet/dotnet-loves-github-actions/
 https://github.com/conventional-changelog/commitlint
 
 
+## Semantic Versioning
+https://semver.org/
+
+https://semantic-release.gitbook.io/semantic-release/
+https://semantic-release.gitbook.io/semantic-release/support/faq#how-can-i-change-the-type-of-commits-that-trigger-a-release
+
+https://github.com/angular/angular/blob/main/CONTRIBUTING.md
 
 
 
@@ -63,54 +70,8 @@ npx husky add .husky/prepare-commit-msg "exec < /dev/tty && git cz --hook || tru
 
 https://github.com/commitizen/cz-cli
 
-
 https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits
 https://marketplace.visualstudio.com/items?itemName=mrluje.vs-commitizen
-
-
-```bash
-npm install --save-dev husky
-# npx semantic-release-cli setup
-```
-
-
-on package.json:
-```json
-"scripts": {
-    "commit": "cz"
-},
-"husky": {
-  "hooks": {
-    "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
-  }
-}
-```
-
-
-
-## Version
-https://semver.org/
-
-
-
-
-
-
-
-https://semantic-release.gitbook.io/semantic-release/
-https://semantic-release.gitbook.io/semantic-release/support/faq#how-can-i-change-the-type-of-commits-that-trigger-a-release
-
-https://github.com/angular/angular/blob/main/CONTRIBUTING.md
-
-
-```sh
-npm install --save-dev @commitlint/config-conventional @commitlint/cli
-
-echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
-
-
-
-```
 
 
 
