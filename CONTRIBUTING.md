@@ -16,16 +16,15 @@ Here are some helpful guidelines to keep in mind when contributing. While follow
 
 
 ## Commits and Pull Requests (PR)
-* :heavy_check_mark: **DO** keep pull requests small so they can be easily reviewed.
 * :heavy_check_mark: **DO** atomic commits to make it easier to analyze changes.
+* :heavy_check_mark: **DO** keep pull requests small so they can be easily reviewed.
 * :x: **AVOID** breaking the continuous integration build.
 
 
 ## Coding Standards
 * :heavy_check_mark: **DO** add XML comment documentation to new classes, methods or parameters.
 * :heavy_check_mark: **DO** add a test class for each feature and a test method for each 
-* :heavy_check_mark: **DO** use language conventions to make code easy to understand quickly
-  * See some tips here: [dofactory](https://www.dofactory.com/csharp-coding-standards);
+* :heavy_check_mark: **DO** use language conventions to make code easy to understand quickly. See some tips here: [dofactory](https://www.dofactory.com/csharp-coding-standards);
 * :heavy_check_mark: **CONSIDER** using SOLID patterns;
 
 
