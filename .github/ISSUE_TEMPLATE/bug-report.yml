@@ -1,9 +1,11 @@
 ---
-name: "🐛 Bug report"
+name: "🐞 Bug report"
 description: Report a bug
-title: "(short issue description)"
+title: "(Short description)"
 labels: [bug]
 assignees: []
+
+
 
 body:
   - type: textarea

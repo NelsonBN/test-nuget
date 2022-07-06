@@ -1,4 +1,4 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links: 
   - name: General support and usage questions
     url: "https://github.com/NelsonBN/test-nuget/issues/new"
