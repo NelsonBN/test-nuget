@@ -1,14 +1,13 @@
 {
   "name": "test-nuget",
-  "version": "1.0.0",
+  "version": "1.4.3",
   "description": "Test nuget project",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
@@ -22,8 +21,11 @@
   },
   "homepage": "https://github.com/NelsonBN/test-nuget#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "semantic-release": "^19.0.3"
   },
   "config": {
     "commitizen": {
