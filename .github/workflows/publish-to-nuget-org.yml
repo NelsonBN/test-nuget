@@ -67,7 +67,10 @@ jobs:
     
     - name: 'Run semantic-release'
       id: 'semantic-release'
-      run: npx semantic-release --no-ci
+      run: |
+       npx semantic-release --no-ci
+       echo ::set-output name=APP_VERSION::${{ nextRelease.version }}
+       echo "--> APP_VERSION=${{ env.APP_VERSION }}"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -76,6 +79,7 @@ jobs:
        echo "1 >" ${{ steps.semantic-release.outputs.nextRelease }}
        echo "2 >" ${{ steps.semantic-release.outputs.nextRelease.version }}
        echo "3 >" ${{ env.nextRelease }}
+       echo "4 >" ${{ steps.semantic-release.outputs.APP_VERSION }}
 
     - name: 'Update nuGet version'
       uses: roryprimrose/set-vs-sdk-project-version@v1
