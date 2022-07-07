@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/NelsonBN/test-nuget/compare/v1.6.1...v1.6.2) (2022-07-07)
+
+
+### Bug Fixes
+
+* testing ([32985eb](https://github.com/NelsonBN/test-nuget/commit/32985eb2ca026e7db704afdab46d8b05adb17069))
+
 ## [1.6.1](https://github.com/NelsonBN/test-nuget/compare/v1.6.0...v1.6.1) (2022-07-07)
 
 
