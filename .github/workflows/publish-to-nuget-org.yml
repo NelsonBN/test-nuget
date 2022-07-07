@@ -21,34 +21,34 @@ env:
 
 jobs:
 
-  test-project:
-    name: "Test nuget"
-    runs-on: 'ubuntu-latest'
+#  test-project:
+#    name: "Test nuget"
+#    runs-on: 'ubuntu-latest'
 
-    steps:
-    - name: "Checkout"
-      uses: actions/checkout@v3
+#    steps:
+#    - name: "Checkout"
+#      uses: actions/checkout@v3
 
-    - name: "Setup .NET"
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: ${{ env.SDK_VERSION }}
+#    - name: "Setup .NET"
+#      uses: actions/setup-dotnet@v2
+#      with:
+#        dotnet-version: ${{ env.SDK_VERSION }}
 
-    - name: "Restore dependencies"
-      run: dotnet restore
+#    - name: "Restore dependencies"
+#      run: dotnet restore
 
-    - name: "Build"
-      run: dotnet build --configuration Release --no-restore
+#    - name: "Build"
+#      run: dotnet build --configuration Release --no-restore
 
-    - name: "Test"
-      run: dotnet test --configuration Release --no-build --verbosity normal
+#    - name: "Test"
+#      run: dotnet test --configuration Release --no-build --verbosity normal
 
 
 
   preparar-release:
     name: "Preparar release"
     runs-on: 'ubuntu-latest'
-    needs: [test-project]
+#    needs: [test-project]
 
     steps:
     - name: "Checkout"
@@ -66,17 +66,19 @@ jobs:
         npm ci
     
     - name: 'Run semantic-release'
+      id: 'semantic-release'
       run: npx semantic-release --no-ci
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: 'Show next version'
-      run: echo ${{ env.nextRelease.version }}
+      run: echo ${{ steps.semantic-release.outputs.nextRelease.version }}
 
     - name: 'Update nuGet version'
       uses: roryprimrose/set-vs-sdk-project-version@v1
       with:
-        version: ${{ env.nextRelease.version }}
+        projectFilter: 'src/**.csproj'
+        version: ${{ steps.semantic-release.outputs.nextRelease.version }}
 
 
 
