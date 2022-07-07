@@ -1,7 +1,6 @@
 name: 'Publish to nuGet.org'
 
 
-
 on:
   workflow_dispatch: # To can dispatch manually
   push:
@@ -21,34 +20,33 @@ env:
 
 jobs:
 
-#  test-project:
-#    name: "Test nuget"
-#    runs-on: 'ubuntu-latest'
+  test-project:
+    name: "Test nuget"
+    runs-on: 'ubuntu-latest'
 
-#    steps:
-#    - name: "Checkout"
-#      uses: actions/checkout@v3
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v3
 
-#    - name: "Setup .NET"
-#      uses: actions/setup-dotnet@v2
-#      with:
-#        dotnet-version: ${{ env.SDK_VERSION }}
+    - name: "Setup .NET"
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.SDK_VERSION }}
 
-#    - name: "Restore dependencies"
-#      run: dotnet restore
+    - name: "Restore dependencies"
+      run: dotnet restore
 
-#    - name: "Build"
-#      run: dotnet build --configuration Release --no-restore
+    - name: "Build"
+      run: dotnet build --configuration Release --no-restore
 
-#    - name: "Test"
-#      run: dotnet test --configuration Release --no-build --verbosity normal
-
+    - name: "Test"
+      run: dotnet test --configuration Release --no-build --verbosity normal
 
 
   preparar-release:
     name: "Preparar release"
     runs-on: 'ubuntu-latest'
-#    needs: [test-project]
+    needs: [test-project]
 
     steps:
     - name: "Checkout"
@@ -67,53 +65,33 @@ jobs:
     
     - name: 'Run semantic-release'
       id: 'semantic-release'
-      run: |
-       npx semantic-release --no-ci
- #      echo ::set-output name=APP_VERSION::${nextRelease.version}
- #      echo "--> APP_VERSION=${{ env.APP_VERSION }}"
+      run: npx semantic-release --no-ci
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-#    - name: 'Show next version'
-#      run: |
-#       echo "1 >" ${{ steps.semantic-release.outputs.nextRelease }}
-#       echo "2 >" ${{ steps.semantic-release.outputs.nextRelease.version }}
-#       echo "3 >" ${{ env.nextRelease }}
-#       echo "4 >" ${{ steps.semantic-release.outputs.APP_VERSION }}
 
-#    - name: 'Update nuGet version'
-#      uses: roryprimrose/set-vs-sdk-project-version@v1
-#      with:
-#        projectFilter: 'src/**.csproj'
-#        version: '3.0.1'
+  deploy-nuget:
+    name: "Deploy nuget"
+    runs-on: 'ubuntu-latest'
+    needs: [preparar-release]
 
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v3
 
+    - name: "Setup .NET"
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.SDK_VERSION }}
 
-#  deploy-nuget:
-#    name: "Deploy nuget"
-#    runs-on: 'ubuntu-latest'
-#    needs: [preparar-release]
+    - name: "Restore dependencies"
+      run: dotnet restore
 
-#    steps:
-#    - name: "Checkout"
-#      uses: actions/checkout@v3
+    - name: "Build"
+      run: dotnet build --configuration Release --no-restore
 
-#    - name: "Setup .NET"
-#      uses: actions/setup-dotnet@v2
-#      with:
-#        dotnet-version: ${{ env.SDK_VERSION }}
+    - name: "Pack"
+      run: dotnet pack --configuration Release --no-build
 
-#    - name: "Restore dependencies"
-#      run: dotnet restore
-
-#    - name: "Build"
-#      run: dotnet build --configuration Release --no-restore
-
-#    - name: "Test"
-#      run: dotnet test --configuration Release --no-build --verbosity normal
-
-#    - name: "Pack"
-#      run: dotnet pack --configuration Release --no-build
-
-#    - name: "Publish nuget"
-#      run: dotnet nuget push ${{ env.PACKAGE_PATH }} --api-key ${{ secrets.NUGET_TOKEN }} --source ${{ env.NUGET_SERVER }} --skip-duplicate
+    - name: "Publish nuget"
+      run: dotnet nuget push ${{ env.PACKAGE_PATH }} --api-key ${{ secrets.NUGET_TOKEN }} --source ${{ env.NUGET_SERVER }} --skip-duplicate

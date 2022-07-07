@@ -1,7 +1,6 @@
 name: 'SonarCloud'
 
 
-
 on:
   workflow_dispatch: # To can dispatch manually
   push:
@@ -13,10 +12,8 @@ on:
       - main
 
 
-
 env:
   SDK_VERSION: '6.0.301'
-
 
 
 jobs:
@@ -74,4 +71,3 @@ jobs:
         dotnet build
         dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --no-build
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-        
