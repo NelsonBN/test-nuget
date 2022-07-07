@@ -31,8 +31,8 @@ Please read and follow our [Code of Conduct][coc].
 8. Submit a pull request;
 
 
-
 ## <a name="commits-pr"></a> Commits and Pull Requests
+
 * :x: **AVOID** breaking the continuous integration build.
 * :heavy_check_mark: **DO** atomic commits to make it easier to analyze changes.
 * :heavy_check_mark: **DO** keep pull requests small so they can be easily reviewed.

@@ -75,13 +75,6 @@ https://marketplace.visualstudio.com/items?itemName=mrluje.vs-commitizen
 
 
 
-
-
-
-
-
-
-
 ```bash
 npm install -D semantic-release @semantic-release/changelog @semantic-release/git
 ```
@@ -92,3 +85,4 @@ https://github.com/semantic-release/semantic-release/blob/c69445ebea7dcdf8038c20
 
 
 npm install -D semantic-release-plugin-csproj
+
