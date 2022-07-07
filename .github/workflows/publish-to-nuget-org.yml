@@ -76,7 +76,6 @@ jobs:
        echo "1 >" ${{ steps.semantic-release.outputs.nextRelease }}
        echo "2 >" ${{ steps.semantic-release.outputs.nextRelease.version }}
        echo "3 >" ${{ env.nextRelease }}
-       echo "4 >" ${{ nextRelease }}
 
     - name: 'Update nuGet version'
       uses: roryprimrose/set-vs-sdk-project-version@v1
