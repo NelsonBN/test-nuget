@@ -55,13 +55,13 @@ jobs:
     - name: "Checkout"
       uses: actions/checkout@v3
     
-    - name: 'Setup NPM'
+    - name: 'Install dependencies'
       run: npm ci
     
     - name: 'Run semantic-release'
-      run: npm run semantic-release --no-ci
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm run semantic-release --no-ci
 
 
 
