@@ -4,6 +4,9 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
+    ["semantic-release-plugin-csproj", {
+        "projectFile": "TestNuget.PleaseDontUse.csproj"
+    }],
     "@semantic-release/changelog",
     "@semantic-release/github",
     "@semantic-release/git",
@@ -11,9 +14,6 @@
       "@semantic-release/npm",
       {
         "npmPublish": false
-      },
-      "semantic-release-plugin-csproj", {
-        "projectFile": "TestNuget.PleaseDontUse.csproj"
       }
     ],
     {
