@@ -1,6 +1,6 @@
 {
   "name": "test-nuget",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "description": "Test nuget project",
   "main": "index.js",
   "directories": {
