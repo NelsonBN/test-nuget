@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/NelsonBN/test-nuget/compare/v1.4.3...v1.4.4) (2022-07-07)
+
+
+### Bug Fixes
+
+* **getcustomversion:** only a test ([f5df195](https://github.com/NelsonBN/test-nuget/commit/f5df1953924ad452a2109a0171c4ad4d7e23bf8d))
+
 # 1.0.0 (2022-07-07)
 
 
