@@ -16,6 +16,7 @@ env:
   SDK_VERSION: '6.0.301'
   PACKAGE_PATH: ./src/**/*.nupkg
   NUGET_SERVER: https://api.nuget.org/v3/index.json
+  OS_MACHINE: 'Ubuntu-latest'
 
 
 
@@ -23,7 +24,7 @@ jobs:
 
   test-project:
     name: "Test nuget"
-    runs-on: ubuntu-latest
+    runs-on: ${{ env.OS_MACHINE }}
 
     steps:
     - name: "Checkout"
@@ -45,12 +46,38 @@ jobs:
 
 
 
-  deploy-nuget:
-    name: "Deploy nuget"
-    runs-on: ubuntu-latest
+  preparar-release:
+    name: "Test nuget"
+    runs-on: ${{ env.OS_MACHINE }}
     needs: [test-project]
 
     steps:
+    - name: "Checkout"
+      uses: actions/checkout@v3
+    
+    - name: 'Setup NPM'
+      run: npm ci
+    
+    - name: 'Run semantic-release'
+      run: npm run semantic-release --no-ci
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+  deploy-nuget:
+    name: "Deploy nuget"
+    runs-on: ${{ env.OS_MACHINE }}
+    needs: [preparar-release]
+
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v3
+
+    - name: "Setup .NET"
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: ${{ env.SDK_VERSION }}
 
     - name: "Restore dependencies"
       run: dotnet restore
