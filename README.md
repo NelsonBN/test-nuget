@@ -88,3 +88,7 @@ npm install -D semantic-release @semantic-release/changelog @semantic-release/gi
 
 https://github.com/settings/tokens/new?scopes=repo
 https://github.com/semantic-release/semantic-release/blob/c69445ebea7dcdf8038c20e36864d3c11c87adf4/docs/recipes/ci-configurations/github-actions.md
+
+
+
+npm install -D semantic-release-plugin-csproj

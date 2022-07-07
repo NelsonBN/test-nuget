@@ -11,6 +11,9 @@
       "@semantic-release/npm",
       {
         "npmPublish": false
+      },
+      "semantic-release-plugin-csproj", {
+        "projectFile": "TestNuget.PleaseDontUse.csproj"
       }
     ],
     {
