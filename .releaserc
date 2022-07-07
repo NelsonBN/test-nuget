@@ -11,11 +11,14 @@
       "@semantic-release/npm",
       {
         "npmPublish": false
+      },
+      "semantic-release-plugin-csproj", {
+        "projectFile": "TestNuget.PleaseDontUse.csproj"
       }
     ],
     {
       "path": "@semantic-release/git",
-      "assets": ["package.json", "package-lock.json", "CHANGELOG.md"],
+      "assets": ["package.json", "package-lock.json", "CHANGELOG.md", "src/**.csproj"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }
   ]
