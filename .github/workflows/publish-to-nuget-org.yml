@@ -70,6 +70,14 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: 'Show next version'
+      uses: echo ${{ env.nextRelease.version }}
+
+    - name: 'Update nuGet version'
+      uses: roryprimrose/set-vs-sdk-project-version@v1
+      with:
+        version: ${{ env.nextRelease.version }}
+
 
 
   deploy-nuget:
