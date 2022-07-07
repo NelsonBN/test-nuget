@@ -16,7 +16,7 @@ env:
   SDK_VERSION: '6.0.301'
   PACKAGE_PATH: ./src/**/*.nupkg
   NUGET_SERVER: https://api.nuget.org/v3/index.json
-  OS_MACHINE: 'Ubuntu-latest'
+  OS_MACHINE: 'ubuntu-latest'
 
 
 
