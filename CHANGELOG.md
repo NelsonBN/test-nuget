@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/NelsonBN/test-nuget/compare/v1.4.4...v1.5.0) (2022-07-07)
+
+
+### Features
+
+* **getcustomversion:** new feat ([808475a](https://github.com/NelsonBN/test-nuget/commit/808475a596cf74f101b71ab18c1151d28da88ada))
+* new version ([9efaa27](https://github.com/NelsonBN/test-nuget/commit/9efaa2746f6da842bfd0800cf873e80b806a84de))
+
 # Changelog
 
 
