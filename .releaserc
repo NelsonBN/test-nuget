@@ -7,13 +7,13 @@
     "@semantic-release/changelog",
     "@semantic-release/github",
     "@semantic-release/git",
-    "@semantic-release-dotnet",
+    "semantic-release-dotnet",
     [
       "@semantic-release/npm",
       {
         "npmPublish": false
       },
-      "@semantic-release-dotnet",
+      "semantic-release-dotnet",
       {
         "paths": ["src/**.csproj"]
     }
