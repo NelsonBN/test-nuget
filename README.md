@@ -83,7 +83,7 @@ https://marketplace.visualstudio.com/items?itemName=mrluje.vs-commitizen
 
 
 ```bash
-npm install -D semantic-release @semantic-release/changelog @semantic-release/git
+npm install -D semantic-release @semantic-release/changelog @semantic-release/git @semantic-release-dotnet
 ```
 
 https://github.com/settings/tokens/new?scopes=repo
