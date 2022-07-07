@@ -61,11 +61,12 @@ jobs:
     
     - name: 'Install dependencies'
       run: |
+        rm -rf package-lock.json node_modules
         npm install
         npm ci
     
     - name: 'Run semantic-release'
-      run: npm run semantic-release --no-ci
+      run: npx semantic-release --no-ci
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
