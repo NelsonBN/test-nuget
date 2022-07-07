@@ -69,7 +69,7 @@ jobs:
       id: 'semantic-release'
       run: |
        npx semantic-release --no-ci
-       echo ::set-output name=APP_VERSION::${{ nextRelease.version }}
+       echo ::set-output name=APP_VERSION::${nextRelease.version}
        echo "--> APP_VERSION=${{ env.APP_VERSION }}"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
