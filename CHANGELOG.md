@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/NelsonBN/test-nuget/compare/v1.6.2...v1.7.0) (2022-07-07)
+
+
+### Bug Fixes
+
+* test ([4c04ea7](https://github.com/NelsonBN/test-nuget/commit/4c04ea745c9e529b0f98250a477fc214657a3273))
+* test ([26dcaea](https://github.com/NelsonBN/test-nuget/commit/26dcaea1cddf91412bef4d612aca1c531638e65f))
+* test ([41aa351](https://github.com/NelsonBN/test-nuget/commit/41aa351dfe5b1022de2dd41a4e88a5e3f864d05e))
+
+
+### Features
+
+* test ([8d003d2](https://github.com/NelsonBN/test-nuget/commit/8d003d22c3f6992f4430091d38c450abfe09887b))
+
 ## [1.6.2](https://github.com/NelsonBN/test-nuget/compare/v1.6.1...v1.6.2) (2022-07-07)
 
 
