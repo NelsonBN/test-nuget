@@ -16,7 +16,6 @@ env:
   SDK_VERSION: '6.0.301'
   PACKAGE_PATH: ./src/**/*.nupkg
   NUGET_SERVER: https://api.nuget.org/v3/index.json
-  OS_MACHINE: 'ubuntu-latest'
 
 
 
@@ -24,7 +23,7 @@ jobs:
 
   test-project:
     name: "Test nuget"
-    runs-on: ${{ env.OS_MACHINE }}
+    runs-on: 'ubuntu-latest'
 
     steps:
     - name: "Checkout"
@@ -59,15 +58,15 @@ jobs:
       run: npm ci
     
     - name: 'Run semantic-release'
+      run: npm run semantic-release --no-ci
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: npm run semantic-release --no-ci
 
 
 
   deploy-nuget:
     name: "Deploy nuget"
-    runs-on: ${{ env.OS_MACHINE }}
+    runs-on: 'ubuntu-latest'
     needs: [preparar-release]
 
     steps:
