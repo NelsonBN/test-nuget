@@ -11,7 +11,11 @@
       "@semantic-release/npm",
       {
         "npmPublish": false
-      }
+      },
+      "semantic-release-dotnet",
+        {
+            "paths": ["src/**.csproj"]
+        }
     ],
     {
       "path": "@semantic-release/git",
