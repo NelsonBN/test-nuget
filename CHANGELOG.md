@@ -1,3 +1,11 @@
+# [2.2.0](https://github.com/NelsonBN/test-nuget/compare/v2.1.0...v2.2.0) (2022-07-08)
+
+
+### Features
+
+* test 4 ([aa95ec4](https://github.com/NelsonBN/test-nuget/commit/aa95ec41e49541d4743e551d5d460ec2607713b3))
+* test2 ([bd66572](https://github.com/NelsonBN/test-nuget/commit/bd665728fe8c3eecb48bb9beae7dd3fda27bf46a))
+
 # [2.1.0](https://github.com/NelsonBN/test-nuget/compare/v2.0.0...v2.1.0) (2022-07-08)
 
 
