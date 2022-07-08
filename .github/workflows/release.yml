@@ -53,13 +53,10 @@ jobs:
       with:
         semantic_version: 18.0.1
         extra_plugins: |
-          @semantic-release/commit-analyzer
-          @semantic-release/release-notes-generator
           semantic-release-plugin-csproj
           @semantic-release/changelog
           @semantic-release/github
           @semantic-release/git
-          @@semantic-release/npm
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
