@@ -24,7 +24,7 @@
         /// </summary>
         /// <returns>Assembly version</returns>
         public static string GetCustomVersion()
-            => "1.8.0";
+            => "1.8.1";
 
         /// <summary>
         /// Get custom framework version

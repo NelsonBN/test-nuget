@@ -83,19 +83,22 @@ jobs:
     - name: "Checkout"
       uses: actions/checkout@v3
 
-    - name: "Setup .NET"
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: ${{ env.SDK_VERSION }}
+    - name: "Testing"
+      run: cat ./src/TestNuget.PleaseDontUse.csproj
 
-    - name: "Restore dependencies"
-      run: dotnet restore
+#    - name: "Setup .NET"
+#      uses: actions/setup-dotnet@v2
+#      with:
+#        dotnet-version: ${{ env.SDK_VERSION }}
 
-    - name: "Build"
-      run: dotnet build --configuration Release --no-restore
+#    - name: "Restore dependencies"
+#      run: dotnet restore
 
-    - name: "Pack"
-      run: dotnet pack --configuration Release --no-build
+#    - name: "Build"
+#      run: dotnet build --configuration Release --no-restore
 
-    - name: "Publish nuget"
-      run: dotnet nuget push ${{ env.PACKAGE_PATH }} --api-key ${{ secrets.NUGET_TOKEN }} --source ${{ env.NUGET_SERVER }} --skip-duplicate
+#    - name: "Pack"
+#      run: dotnet pack --configuration Release --no-build
+
+#    - name: "Publish nuget"
+#      run: dotnet nuget push ${{ env.PACKAGE_PATH }} --api-key ${{ secrets.NUGET_TOKEN }} --source ${{ env.NUGET_SERVER }} --skip-duplicate
