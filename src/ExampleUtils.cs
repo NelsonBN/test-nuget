@@ -6,7 +6,6 @@
             => num1 + num2;
 
 
-
         /// <summary>
         /// Chech if the number is negative
         /// </summary>
