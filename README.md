@@ -83,6 +83,7 @@ https://github.com/settings/tokens/new?scopes=repo
 https://github.com/semantic-release/semantic-release/blob/c69445ebea7dcdf8038c20e36864d3c11c87adf4/docs/recipes/ci-configurations/github-actions.md
 
 
-
+https://npmmirror.com/package/semantic-release-plugin-csproj
 npm install -D semantic-release-plugin-csproj
 
+https://github.com/semantic-release/github/issues/175
