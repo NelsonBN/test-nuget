@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/NelsonBN/test-nuget/compare/v1.7.0...v1.8.0) (2022-07-08)
+
+
+### Features
+
+* add method to sum ([17afe58](https://github.com/NelsonBN/test-nuget/commit/17afe58cc477916749c1a5c04e60264eb85e8dc9))
+* test new feature ([65d2550](https://github.com/NelsonBN/test-nuget/commit/65d25505c4de9828734c976e6ebd276272d839ea))
+
 # [1.7.0](https://github.com/NelsonBN/test-nuget/compare/v1.6.2...v1.7.0) (2022-07-07)
 
 
