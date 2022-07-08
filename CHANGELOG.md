@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/NelsonBN/test-nuget/compare/v1.8.0...v1.8.1) (2022-07-08)
+
+
+### Bug Fixes
+
+* testing ([caa5ea7](https://github.com/NelsonBN/test-nuget/commit/caa5ea74b95ab7fa5d7008d03120d76b15676f46))
+
 # [1.8.0](https://github.com/NelsonBN/test-nuget/compare/v1.7.0...v1.8.0) (2022-07-08)
 
 
