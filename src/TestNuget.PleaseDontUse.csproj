@@ -74,10 +74,10 @@
   </ItemGroup>
 
 
-  <ItemGroup  Condition="'$(Configuration)'=='Release'">
+  <ItemGroup Condition="'$(Configuration)'=='Release'">
     <None Include="..\assets\logo\logo_128x128.png" Pack="true" PackagePath="" />
     <None Include="..\LICENSE" Pack="true" PackagePath="" />
-    <None Include="..\nuget.org.md" Pack="true" PackagePath=""  />
+    <None Include="..\nuget.org.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 
@@ -86,6 +86,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="PowerUtils.Text" Version="1.0.0" />
   </ItemGroup>
+
 
 </Project>
