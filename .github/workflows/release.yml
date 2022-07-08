@@ -43,5 +43,9 @@ jobs:
       id: 'semantic-release'
       run: npx semantic-release --no-ci
       env:
+
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: "echo"
+      run: echo ">>> " . ${{ steps.semantic-release.outputs.new_release_version }}
