@@ -26,7 +26,7 @@ Please read and follow our [Code of Conduct][coc].
 3. Fork this repository;
 4. Create your feature branch: `git checkout -b feat/my-new-feature`;
 5. Add files changed:  `git add --all`;
-6. Commit your changes: `git commit -m "Add some feature"`;
+6. Commit your changes: `git commit -m "feat: Add some feature"`;
 7. Push to the branch: `git push origin feat/my-new-feature`;
 8. Submit a pull request;
 
@@ -59,17 +59,18 @@ feat(blog): add comment section
 
 #### <a name="commits-types"></a> Common types you can use (based on the Angular convention):
 
-- build
-- chore
-- ci
-- docs
-- feat
-- fix
-- perf
-- refactor
-- revert
-- style
-- test
+- `feat:` A new feature
+- `fix:` A bug fix
+- `docs:` Documentation only changes
+- `style:` Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- `refactor:` A code change that neither fixes a bug nor adds a feature
+- `perf:` A code change that improves performance
+- `build:` A new feature
+- `test:` Adding missing tests or correcting existing tests
+- `ci:` Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+- `chore:` Other changes that don't modify src or test files
+- `merge:` Merge a branch into other branch
+- `revert:` Reverts a previous commit
 
 
 
