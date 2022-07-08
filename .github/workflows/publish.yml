@@ -50,7 +50,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: "New version"
-      run: echo "New version ${{ steps.semantic-release.outputs.new_release_version }}
+      run: echo "New version ${{ steps.semantic-release.outputs.new_release_version }}"
 
     - name: "Restore dependencies"
       if: ${{ steps.semantic-release.outputs.new_release_version != '' }}
