@@ -3,10 +3,17 @@ name: 'Tests'
 
 on:
   workflow_dispatch: # To can dispatch manually
+
   pull_request:
     types: [opened, reopened, synchronize]
     branches:
       - main
+
+  push: # First pipeline to run when deploy a new version
+    branches:
+      - main
+    paths:
+      - "src/**" # Only run when exists changes in source code
 
 
 env:

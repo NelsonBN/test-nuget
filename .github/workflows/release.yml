@@ -1,0 +1,51 @@
+name: 'Release'
+
+
+on:
+  workflow_run:
+    workflows:
+      - Tests
+    branches:
+      - main
+    paths:
+      - "src/**" # Only run when exists changes in source code
+    types:
+      - completed
+
+
+
+env:
+  SDK_VERSION: '6.0.301'
+
+
+
+jobs:
+
+  preparar-release:
+    name: "Preparar release"
+    runs-on: 'ubuntu-latest'
+
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+
+    - name: 'Setup Node.js'
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'lts/*'
+    
+    - name: 'Install dependencies'
+      run: |
+        rm -rf package-lock.json node_modules
+        npm install
+        npm ci
+    
+    - name: 'Run semantic-release'
+      id: 'semantic-release'
+      run: npx semantic-release --no-ci
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
