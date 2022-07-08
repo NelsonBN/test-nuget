@@ -1,3 +1,11 @@
+# [2.1.0](https://github.com/NelsonBN/test-nuget/compare/v2.0.0...v2.1.0) (2022-07-08)
+
+
+### Features
+
+* New method ([0f0ad9d](https://github.com/NelsonBN/test-nuget/commit/0f0ad9d6ff80a55fe95b0b94800930048507dd0f))
+* testing again ([e9e6725](https://github.com/NelsonBN/test-nuget/commit/e9e67252d3793135667679e8a7877b2da4a03a32))
+
 # [2.0.0](https://github.com/NelsonBN/test-nuget/compare/v1.8.1...v2.0.0) (2022-07-08)
 
 
