@@ -84,6 +84,8 @@ https://github.com/semantic-release/semantic-release/blob/c69445ebea7dcdf8038c20
 
 
 https://npmmirror.com/package/semantic-release-plugin-csproj
+```bash
 npm install -D semantic-release-plugin-csproj
+```
 
 https://github.com/semantic-release/github/issues/175
