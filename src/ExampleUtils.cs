@@ -19,9 +19,6 @@
             return false;
         }
 
-
-
-
         /// <summary>
         /// Get custom version
         /// </summary>
