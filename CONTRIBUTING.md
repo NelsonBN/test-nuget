@@ -42,8 +42,14 @@ Please read and follow our [Code of Conduct][coc].
 To know more about conventional commits, visit [Conventional Commits](https://conventionalcommits.org/).
 
 In general the pattern mostly looks like this:
-```sh
-type(scope?): subject  #scope is optional; multiple scopes are supported (current delimiter options: "/", "\" and ",")
+```
+<type>(<scope>): <short summary>
+  │       │             │
+  │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │       │
+  │       └─⫸ Commit Scope: *
+  │
+  └─⫸ Commit Type: feat|fix|docs|style|refactor|perf|build|test|ci|chore|merge|revert
 ```
 
 Real world examples can look like this:
@@ -65,7 +71,7 @@ feat(blog): add comment section
 - `style:` Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - `refactor:` A code change that neither fixes a bug nor adds a feature
 - `perf:` A code change that improves performance
-- `build:` A new feature
+- `build:` Changes that affect the build system or external dependencies (example scopes: nugets, npm, SDKs, etc)
 - `test:` Adding missing tests or correcting existing tests
 - `ci:` Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
 - `chore:` Other changes that don't modify src or test files

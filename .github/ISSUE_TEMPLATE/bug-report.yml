@@ -3,7 +3,7 @@ name: "🐞 Bug report"
 description: Report a bug
 title: "(Short description)"
 labels: [bug]
-assignees: []
+assignees: [NelsonBN]
 
 
 
