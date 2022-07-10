@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/NelsonBN/test-nuget/compare/v2.10.0...v2.11.0) (2022-07-10)
+
+
+### Features
+
+* Add method `Mult` ([5527136](https://github.com/NelsonBN/test-nuget/commit/55271369d6ba953a24aac5de70de2f30a4408fd0))
+
 # [2.10.0](https://github.com/NelsonBN/test-nuget/compare/v2.9.1...v2.10.0) (2022-07-10)
 
 
