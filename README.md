@@ -1,3 +1,5 @@
+<img src="assets/logo/logo_128x128.png" alt="PowerUtils.Globalization" /></br>
+
 # test-nuget
 Test nuget project
 
