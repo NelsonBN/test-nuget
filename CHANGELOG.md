@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/NelsonBN/test-nuget/compare/v4.0.0...v4.0.1) (2022-07-10)
+
+
+### Bug Fixes
+
+* test somantic release ([60152a9](https://github.com/NelsonBN/test-nuget/commit/60152a987b0563a0a80e627b33de1a2af09d91ae))
+
 # [4.0.0](https://github.com/NelsonBN/test-nuget/compare/v3.0.0...v4.0.0) (2022-07-10)
 
 
