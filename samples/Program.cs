@@ -8,7 +8,7 @@ namespace TestProject.Utils.Samples
         public static void Main(string[] _)
         {
             Console.WriteLine();
-            Console.WriteLine($">>> {nameof(ExampleUtils.GetCustomFrameworkVersion)}: {ExampleUtils.GetCustomFrameworkVersion()}");
+            Console.WriteLine($">>> {nameof(ExampleUtils.GetCustomFrameworkVersion)}: {ExampleUtils.GetCustomFrameworkVersion("hello")}");
         }
 
     }
