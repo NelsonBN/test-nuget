@@ -40,5 +40,53 @@ namespace TestProject.Utils.Tests
             act.Should()
                 .NotBeNullOrWhiteSpace();
         }
+
+        [Fact]
+        public void ThreeAndTwo_Sum_String()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.Sum(3, 2);
+
+
+            // Assert
+            act.Should()
+                .Be(5);
+        }
+
+        [Fact]
+        public void ThreeAndTwo_Sub_String()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.Sub(3, 2);
+
+
+            // Assert
+            act.Should()
+                .Be(1);
+        }
+
+        [Fact]
+        public void NegativeOnde_IsNegative_True()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.IsNegative(-1);
+
+
+            // Assert
+            act.Should()
+                .BeTrue();
+        }
+
+        [Fact]
+        public void Three_IsNegative_False()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.IsNegative(3);
+
+
+            // Assert
+            act.Should()
+                .BeFalse();
+        }
     }
 }

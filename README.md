@@ -31,8 +31,8 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=NelsonBN_test-nuget&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=NelsonBN_test-nuget)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=NelsonBN_test-nuget&metric=coverage)](https://sonarcloud.io/summary/new_code?id=NelsonBN_test-nuget)
 
-[![NuGet](https://img.shields.io/nuget/v/test-nuget.svg)](https://www.nuget.org/packages/test-nuget)
-[![Nuget](https://img.shields.io/nuget/dt/test-nuget.svg)](https://www.nuget.org/packages/test-nuget)
+[![NuGet](https://img.shields.io/nuget/v/TestNuget.PleaseDontUse.svg)](https://www.nuget.org/packages/TestNuget.PleaseDontUse)
+[![Nuget](https://img.shields.io/nuget/dt/TestNuget.PleaseDontUse.svg)](https://www.nuget.org/packages/TestNuget.PleaseDontUse)
 [![License: MIT](https://img.shields.io/github/license/NelsonBN/test-nuget.svg)](https://github.com/NelsonBN/test-nuget/blob/main/LICENSE)
 
 
