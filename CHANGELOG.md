@@ -1,3 +1,10 @@
+# [2.10.0](https://github.com/NelsonBN/test-nuget/compare/v2.9.1...v2.10.0) (2022-07-10)
+
+
+### Features
+
+* Add new method `sub` ([e8c7ea7](https://github.com/NelsonBN/test-nuget/commit/e8c7ea75ef2a94f74e8f4d64859d6b8ae6e481ac))
+
 ## [2.9.1](https://github.com/NelsonBN/test-nuget/compare/v2.9.0...v2.9.1) (2022-07-10)
 
 
