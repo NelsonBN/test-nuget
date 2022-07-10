@@ -8,6 +8,6 @@
 
 
 
-## Contribution <a name="contribution"></a>
+## Contribution
 
 If you have any questions, comments, or suggestions, please open an issue or create a pull request
