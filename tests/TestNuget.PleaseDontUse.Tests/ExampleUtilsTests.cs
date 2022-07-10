@@ -12,20 +12,6 @@ namespace TestProject.Utils.Tests
         public ExampleUtilsTests(ITestOutputHelper output)
             => _output = output;
 
-        [Fact]
-        public void Request_GetAssemblyVersion_NotBeNullOrWhiteSpace()
-        {
-            // Arrange && Act
-            var act = ExampleUtils.GetCustomVersion();
-
-
-            // Assert
-            _output.WriteLine($"{nameof(ExampleUtils.GetCustomVersion)}: {act}");
-
-            act.Should()
-                .NotBeNullOrWhiteSpace();
-        }
-
 
         [Fact]
         public void Request_GetCustomFrameworkVersion_NotBeNullOrWhiteSpace()
