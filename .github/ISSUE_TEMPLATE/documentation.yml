@@ -3,7 +3,7 @@ name: "📕 Documentation issue or suggestion"
 description: Report an issue or a suggestion for documentation
 title: "(Short description)"
 labels: [documentation]
-assignees: []
+assignees: [NelsonBN]
 
 
 

@@ -3,7 +3,7 @@ name: "💊 Support"
 description: "Request support about this project"
 title: "(short issue description)"
 labels: [support]
-assignees: []
+assignees: [NelsonBN]
 
 
 
