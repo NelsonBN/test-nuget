@@ -1,3 +1,10 @@
+# [2.13.0](https://github.com/NelsonBN/test-nuget/compare/v2.12.0...v2.13.0) (2022-07-10)
+
+
+### Features
+
+* Add new method `Sub` for three numbers ([9fd73e8](https://github.com/NelsonBN/test-nuget/commit/9fd73e837f29796708f83f878ffc247068d11ea6))
+
 # [2.12.0](https://github.com/NelsonBN/test-nuget/compare/v2.11.0...v2.12.0) (2022-07-10)
 
 
