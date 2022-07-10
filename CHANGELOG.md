@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/NelsonBN/test-nuget/compare/v3.0.0...v4.0.0) (2022-07-10)
+
+
+### Features
+
+* Update method `GetCustomFrameworkVersion` ([01473ca](https://github.com/NelsonBN/test-nuget/commit/01473cae73787da300aa4401fce3fb02084946cb))
+
+
+### BREAKING CHANGES
+
+* add text property in method `GetCustomFrameworkVersion`
+
 # [3.0.0](https://github.com/NelsonBN/test-nuget/compare/v2.14.0...v3.0.0) (2022-07-10)
 
 
