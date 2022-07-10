@@ -8,4 +8,4 @@
 
 ## Contribution
 
-If you have any questions, comments, or suggestions, please open an [issue](https://github.com/NelsonBN/test-nuget/issues/new/choose) or create a pull request
+If you have any questions, comments, or suggestions, please open an [issue](https://github.com/NelsonBN/test-nuget/issues/new/choose) or create a [pull request](https://github.com/NelsonBN/test-nuget/compare)
