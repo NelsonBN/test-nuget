@@ -26,6 +26,9 @@ https://github.com/conventional-changelog/commitlint
 
 
 ## Semantic Versioning
+https://www.conventionalcommits.org/en/v1.0.0/
+
+
 https://semver.org/
 
 https://semantic-release.gitbook.io/semantic-release/
