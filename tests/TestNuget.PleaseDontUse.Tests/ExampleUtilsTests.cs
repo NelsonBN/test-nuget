@@ -54,6 +54,18 @@ namespace TestProject.Utils.Tests
         }
 
         [Fact]
+        public void ThreeAndTwoAndOne_Sum_String()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.Sum(3, 2, 1);
+
+
+            // Assert
+            act.Should()
+                .Be(6);
+        }
+
+        [Fact]
         public void ThreeAndTwo_Sub_String()
         {
             // Arrange && Act
