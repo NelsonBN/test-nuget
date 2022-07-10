@@ -39,13 +39,6 @@ namespace TestNuget.PleaseDontUse
         }
 
         /// <summary>
-        /// Get custom version
-        /// </summary>
-        /// <returns>Assembly version</returns>
-        public static string GetCustomVersion()
-            => "2.0.0";
-
-        /// <summary>
         /// Get custom framework version
         /// </summary>
         /// <returns>Custom framework version</returns>
