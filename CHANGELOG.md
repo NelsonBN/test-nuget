@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/NelsonBN/test-nuget/compare/v2.11.0...v2.12.0) (2022-07-10)
+
+
+### Features
+
+* Add method `Sum` for three numbers ([ffe56d7](https://github.com/NelsonBN/test-nuget/commit/ffe56d76770b78549a56def077db54f025d77004))
+
 # [2.11.0](https://github.com/NelsonBN/test-nuget/compare/v2.10.0...v2.11.0) (2022-07-10)
 
 
