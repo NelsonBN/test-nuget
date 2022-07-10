@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/NelsonBN/test-nuget/compare/v2.14.0...v3.0.0) (2022-07-10)
+
+
+### chore
+
+* remove method ([930cbf1](https://github.com/NelsonBN/test-nuget/commit/930cbf1f836bf85bfa013bd638aaa540a4a3f42a))
+
+
+### BREAKING CHANGES
+
+* Remove method `XPTO`
+
 # [2.14.0](https://github.com/NelsonBN/test-nuget/compare/v2.13.0...v2.14.0) (2022-07-10)
 
 
