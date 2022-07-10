@@ -1,3 +1,11 @@
+# [2.9.0](https://github.com/NelsonBN/test-nuget/compare/v2.8.0...v2.9.0) (2022-07-10)
+
+
+### Features
+
+* changes in src ([4e0340a](https://github.com/NelsonBN/test-nuget/commit/4e0340aa7a5f1a5cb554daae73ac7b9a999575c7))
+* more-test ([edb3ff9](https://github.com/NelsonBN/test-nuget/commit/edb3ff92b3b7d494dd661491f68fb4e5618a1812))
+
 # [2.8.0](https://github.com/NelsonBN/test-nuget/compare/v2.7.0...v2.8.0) (2022-07-10)
 
 
