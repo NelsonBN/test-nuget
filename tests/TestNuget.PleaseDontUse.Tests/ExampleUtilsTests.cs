@@ -13,7 +13,7 @@ namespace TestProject.Utils.Tests
             => _output = output;
 
         [Fact]
-        public void Request_GetAssemblyVersion_String()
+        public void Request_GetAssemblyVersion_NotBeNullOrWhiteSpace()
         {
             // Arrange && Act
             var act = ExampleUtils.GetCustomVersion();
@@ -28,7 +28,7 @@ namespace TestProject.Utils.Tests
 
 
         [Fact]
-        public void Request_GetCustomFrameworkVersion_String()
+        public void Request_GetCustomFrameworkVersion_NotBeNullOrWhiteSpace()
         {
             // Arrange && Act
             var act = ExampleUtils.GetCustomFrameworkVersion();
@@ -42,7 +42,7 @@ namespace TestProject.Utils.Tests
         }
 
         [Fact]
-        public void ThreeAndTwo_Sum_String()
+        public void ThreeAndTwo_Sum_Five()
         {
             // Arrange && Act
             var act = ExampleUtils.Sum(3, 2);
@@ -54,7 +54,7 @@ namespace TestProject.Utils.Tests
         }
 
         [Fact]
-        public void ThreeAndTwoAndOne_Sum_String()
+        public void ThreeAndTwoAndOne_Sum_Six()
         {
             // Arrange && Act
             var act = ExampleUtils.Sum(3, 2, 1);
@@ -66,7 +66,7 @@ namespace TestProject.Utils.Tests
         }
 
         [Fact]
-        public void ThreeAndTwo_Sub_String()
+        public void ThreeAndTwo_Sub_One()
         {
             // Arrange && Act
             var act = ExampleUtils.Sub(3, 2);
@@ -75,6 +75,18 @@ namespace TestProject.Utils.Tests
             // Assert
             act.Should()
                 .Be(1);
+        }
+
+        [Fact]
+        public void ThreeAndTwoAndOne_Sub_Zero()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.Sub(3, 2, 1);
+
+
+            // Assert
+            act.Should()
+                .Be(0);
         }
 
         [Fact]
@@ -102,7 +114,7 @@ namespace TestProject.Utils.Tests
         }
 
         [Fact]
-        public void TwoAndTwo_Mult_String()
+        public void TwoAndTwo_Mult_Four()
         {
             // Arrange && Act
             var act = ExampleUtils.Mult(2, 2);
