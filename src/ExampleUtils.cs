@@ -1,7 +1,15 @@
-﻿namespace TestNuget.PleaseDontUse
+﻿using System;
+
+namespace TestNuget.PleaseDontUse
 {
     public static class ExampleUtils
     {
+        public static int Print(int num)
+        {
+            Console.WriteLine(num);
+            return num;
+        }
+
         public static int Sum(int num1, int num2, int num3)
             => num1 + num2 + num3;
 
