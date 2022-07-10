@@ -1,4 +1,9 @@
 <img src="assets/logo/logo_128x128.png" alt="PowerUtils.Globalization" /></br>
+![Logo](assets/logo/logo_128x128.png)
+
+- [Changelog 1](./CHANGELOG.md)
+- [Changelog 1.1](CHANGELOG.md)
+- [Changelog 2](https://github.com/NelsonBN/test-nuget/blob/main/CHANGELOG.md)
 
 # test-nuget
 Test nuget project
