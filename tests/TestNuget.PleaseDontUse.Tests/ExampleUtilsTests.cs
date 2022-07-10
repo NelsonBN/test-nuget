@@ -124,5 +124,17 @@ namespace TestProject.Utils.Tests
             act.Should()
                 .Be(4);
         }
+
+        [Fact]
+        public void Two_Print_Two()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.Print(2);
+
+
+            // Assert
+            act.Should()
+                .Be(2);
+        }
     }
 }
