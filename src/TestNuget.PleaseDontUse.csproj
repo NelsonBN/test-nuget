@@ -34,7 +34,6 @@
     <Copyright>Copyright © $(CurrentYear) by NelsonBN</Copyright>
 
     <Description>Test project to create a nuget. Please don't use this project</Description>
-    <PackageReleaseNotes>https://github.com/NelsonBN/test-nuget/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Test project to create a nuget. Please don't use this project</Summary>
     <PackageTags>TestNuget;NuGet;PleaseDontUse</PackageTags>
     <PackageProjectUrl>https://github.com/NelsonBN/test-nuget</PackageProjectUrl>
