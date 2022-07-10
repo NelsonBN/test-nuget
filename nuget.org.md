@@ -1,5 +1,13 @@
-# my Nuget Test
+![Logo](https://github.com/NelsonBN/test-nuget/raw/main/assets/logo/logo_128x128.png)
 
-Hello nuget.org
+***Test nuget project***
 
-Hello source link
+![Tests](https://github.com/NelsonBN/test-nuget/actions/workflows/tests.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=NelsonBN_test-nuget&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=NelsonBN_test-nuget)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=NelsonBN_test-nuget&metric=coverage)](https://sonarcloud.io/summary/new_code?id=NelsonBN_test-nuget)
+
+
+
+## Contribution <a name="contribution"></a>
+
+If you have any questions, comments, or suggestions, please open an issue or create a pull request
