@@ -17,7 +17,7 @@ namespace TestProject.Utils.Tests
         public void Request_GetCustomFrameworkVersion_NotBeNullOrWhiteSpace()
         {
             // Arrange && Act
-            var act = ExampleUtils.GetCustomFrameworkVersion();
+            var act = ExampleUtils.GetCustomFrameworkVersion("hello");
 
 
             // Assert

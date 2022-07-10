@@ -41,13 +41,13 @@ namespace TestNuget.PleaseDontUse
         /// Get custom framework version
         /// </summary>
         /// <returns>Custom framework version</returns>
-        public static string GetCustomFrameworkVersion()
+        public static string GetCustomFrameworkVersion(string text)
 #if NET6_0_OR_GREATER
-            => ".NET 6.0 or greater";
+            => ".NET 6.0 or greater > " + text;
 #elif NET5_0_OR_GREATER
-        => ".NET 5.0";
+        => ".NET 5.0 > " + text;
 #else
-        => "Undefined";
+        => "Undefined > " + text;
 #endif
     }
 }
