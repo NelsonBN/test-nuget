@@ -1,3 +1,11 @@
+## [2.9.1](https://github.com/NelsonBN/test-nuget/compare/v2.9.0...v2.9.1) (2022-07-10)
+
+
+### Bug Fixes
+
+* code ([3cc9061](https://github.com/NelsonBN/test-nuget/commit/3cc906149395952bf083f1bbf31d4037be4d70db))
+* readme images url ([d95df52](https://github.com/NelsonBN/test-nuget/commit/d95df523613fe6fe00678f1d99de8bf258962797))
+
 # [2.9.0](https://github.com/NelsonBN/test-nuget/compare/v2.8.0...v2.9.0) (2022-07-10)
 
 
