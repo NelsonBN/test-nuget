@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/NelsonBN/test-nuget/compare/v2.7.0...v2.8.0) (2022-07-10)
+
+
+### Features
+
+* readme in nuget.org ([0fd129a](https://github.com/NelsonBN/test-nuget/commit/0fd129a7ca2385d058835fce40b072986b60c5ad))
+
 # [2.7.0](https://github.com/NelsonBN/test-nuget/compare/v2.6.0...v2.7.0) (2022-07-08)
 
 
