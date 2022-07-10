@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-if ! head -1 "$1" | grep -qE "^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test|merge)(\(.+?\))?: .{1,}$"; then
+if ! head -1 "$1" | grep -qE "^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test|merge)(\(.+?\))?(\!)?: .{3,}$"; then
     echo "Aborting commit. Your commit message is invalid. See some examples below:" >&2
     echo "feat(logging): added logs for failed signups" >&2
     echo "fix(homepage): fixed image gallery" >&2
@@ -8,7 +8,7 @@ if ! head -1 "$1" | grep -qE "^(build|chore|ci|docs|feat|fix|perf|refactor|rever
     echo "For more information check https://www.conventionalcommits.org/en/v1.0.0/ for more details" >&2
     exit 1
 fi
-if ! head -1 "$1" | grep -qE "^.{6,85}$"; then
+if ! head -1 "$1" | grep -qE "^.{9,85}$"; then
     echo "Aborting commit. Your commit message is too long. Max length is 89 characters" >&2
     exit 1
 fi
