@@ -88,5 +88,17 @@ namespace TestProject.Utils.Tests
             act.Should()
                 .BeFalse();
         }
+
+        [Fact]
+        public void TwoAndTwo_Mult_String()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.Mult(2, 2);
+
+
+            // Assert
+            act.Should()
+                .Be(4);
+        }
     }
 }
