@@ -1,3 +1,10 @@
+# [2.14.0](https://github.com/NelsonBN/test-nuget/compare/v2.13.0...v2.14.0) (2022-07-10)
+
+
+### Features
+
+* add method `Print` ([d956ce2](https://github.com/NelsonBN/test-nuget/commit/d956ce2d06590ae01e5f5c8fb1bd7dc6c1d1b148))
+
 # [2.13.0](https://github.com/NelsonBN/test-nuget/compare/v2.12.0...v2.13.0) (2022-07-10)
 
 
