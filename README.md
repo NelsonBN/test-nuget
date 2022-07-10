@@ -1,6 +1,6 @@
 # test-nuget
 
-![Logo](https://github.com/NelsonBN/test-nuget/raw/main/assets/logo/logo_128x128.png)
+![Logo](https://raw.githubusercontent.com/NelsonBN/test-nuget/main/assets/logo/logo_128x128.png)
 
 ***Test nuget project***
 
