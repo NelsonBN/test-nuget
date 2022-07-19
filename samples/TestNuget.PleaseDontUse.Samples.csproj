@@ -6,6 +6,8 @@
 
     <RootNamespace>TestProject.Utils.Samples</RootNamespace>
     <AssemblyName>TestProject.Utils.Samples</AssemblyName>
+    
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
