@@ -1,0 +1,34 @@
+name: 'DevPipeline'
+
+
+on:
+  workflow_dispatch: # To can dispatch manually
+
+  push:
+    branches:
+      - main
+  
+  workflow_run:
+    workflows: ["Tests"]
+    types:
+      - completed
+
+  pull_request:
+    types: [opened, reopened, edited, synchronize]
+    branches:
+      - main
+
+
+jobs:
+
+  test-envs:
+    name: 'Test envs'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Show envs'
+      run: |
+        echo "github.event_name '${{ github.event_name }}'"
+        echo "github.event.workflow_run.event '${{ github.event.workflow_run.event }}'"
+        echo "github.event.workflow_run.conclusion '${{ github.event.workflow_run.conclusion }}'"
+        echo "github.actor '${{ github.actor }}'"
