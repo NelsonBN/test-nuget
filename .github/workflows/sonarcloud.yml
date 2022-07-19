@@ -36,6 +36,13 @@ jobs:
       }}
 
     steps:
+    - name: 'Show envs'
+      run: |
+        echo "github.event_name '${{ github.event_name }}'"
+        echo "github.event.workflow_run.event '${{ github.event.workflow_run.event }}'"
+        echo "github.event.workflow_run.conclusion '${{ github.event.workflow_run.conclusion }}'"
+        echo "github.actor '${{ github.actor }}'"
+
     - name: "Setup .NET"
       uses: actions/setup-dotnet@v2
       with:
