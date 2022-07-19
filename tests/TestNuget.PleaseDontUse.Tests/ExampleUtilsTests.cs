@@ -122,5 +122,49 @@ namespace TestProject.Utils.Tests
             act.Should()
                 .Be(2);
         }
+
+        [Fact]
+        public void Number_Print_SameNumber()
+        {
+            // Arrange
+            var number = 1;
+
+
+            // Act
+            var act = ExampleUtils.Print(number);
+
+
+            // Assert
+            act.Should()
+                .Be(number);
+        }
+
+        [Fact]
+        public void Number_PrintToMD5_NoNull()
+        {
+            // Arrange
+            var number = 1;
+
+
+            // Act
+            var act = ExampleUtils.PrintToMD5(number);
+
+
+            // Assert
+            act.Should()
+                .NotBeNull();
+        }
+
+        [Fact]
+        public void Call_PrintMyTest_Text()
+        {
+            // Arrange && Act
+            var act = ExampleUtils.PrintMyTest();
+
+
+            // Assert
+            act.Should()
+                .NotBeNull();
+        }
     }
 }
