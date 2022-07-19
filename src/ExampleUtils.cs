@@ -7,7 +7,7 @@ namespace TestNuget.PleaseDontUse
     {
         public static string PrintMyTest()
         {
-            var myText = "Hello";
+            var myText = "Hello 4";
             Console.WriteLine(myText);
             return myText;
         }
