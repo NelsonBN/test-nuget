@@ -2,6 +2,7 @@
 
 namespace TestNuget.PleaseDontUse
 {
+
     public static class ExampleUtils
     {
         public static int Print(int num)
