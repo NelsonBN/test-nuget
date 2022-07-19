@@ -3,7 +3,6 @@ using PowerUtils.Security;
 
 namespace TestNuget.PleaseDontUse
 {
-
     public static class ExampleUtils
     {
         public static int Print(int num)
@@ -15,6 +14,7 @@ namespace TestNuget.PleaseDontUse
         public static string PrintToMD5(int num)
         {
             var md5 = num.ToString().ToMD5();
+
             Console.WriteLine(md5);
             return md5;
         }
