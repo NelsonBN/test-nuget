@@ -1,4 +1,5 @@
 ﻿using System;
+using PowerUtils.Security;
 
 namespace TestNuget.PleaseDontUse
 {
@@ -10,6 +11,14 @@ namespace TestNuget.PleaseDontUse
             Console.WriteLine(num);
             return num;
         }
+
+        public static string PrintToMD5(int num)
+        {
+            var md5 = num.ToString().ToMD5();
+            Console.WriteLine(md5);
+            return md5;
+        }
+
         public static int Sum(int num1, int num2, int num3)
             => num1 + num2 + num3;
 
