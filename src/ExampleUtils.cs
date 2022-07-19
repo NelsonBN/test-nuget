@@ -5,6 +5,13 @@ namespace TestNuget.PleaseDontUse
 {
     public static class ExampleUtils
     {
+        public static string PrintMyTest()
+        {
+            var myText = "Hello";
+            Console.WriteLine(myText);
+            return myText;
+        }
+
         public static int Print(int num)
         {
             Console.WriteLine(num);
