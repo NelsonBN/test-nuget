@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/NelsonBN/test-nuget/compare/v4.1.0...v4.2.0) (2022-07-19)
+
+
+### Features
+
+* Add method `PrintMyText` ([68406e2](https://github.com/NelsonBN/test-nuget/commit/68406e28b9f8fc126c04f1838e42f177944bbaad))
+
 # [4.1.0](https://github.com/NelsonBN/test-nuget/compare/v4.0.1...v4.1.0) (2022-07-19)
 
 
