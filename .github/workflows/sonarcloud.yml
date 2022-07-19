@@ -7,17 +7,17 @@ on:
   push:
     branches:
       - main
+  
+  workflow_run:
+    workflows: ["Tests"]
+    types:
+      - completed
 
 #  pull_request:
 #    types: [opened, reopened, edited, synchronize]
 #    branches:
 #      - main
 
-  workflow_run:
-    workflows:
-      - Tests
-    types:
-      - completed
 
 
 env:
