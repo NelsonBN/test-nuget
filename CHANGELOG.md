@@ -1,3 +1,15 @@
+# [4.1.0](https://github.com/NelsonBN/test-nuget/compare/v4.0.1...v4.1.0) (2022-07-19)
+
+
+### Bug Fixes
+
+* space ([066eb34](https://github.com/NelsonBN/test-nuget/commit/066eb345a305b1d649e84e54316fba8dc4a88de3))
+
+
+### Features
+
+* Add method `PrintToMD5` ([f993726](https://github.com/NelsonBN/test-nuget/commit/f99372662fdb1f4edf897c29c6d8bec842454879))
+
 ## [4.0.1](https://github.com/NelsonBN/test-nuget/compare/v4.0.0...v4.0.1) (2022-07-10)
 
 
