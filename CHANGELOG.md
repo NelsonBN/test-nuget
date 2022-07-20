@@ -1,3 +1,10 @@
+## [4.2.2](https://github.com/NelsonBN/test-nuget/compare/v4.2.1...v4.2.2) (2022-07-20)
+
+
+### Bug Fixes
+
+* Hello 5 ([d54ae6f](https://github.com/NelsonBN/test-nuget/commit/d54ae6f29546705e2d4dae5c0e56ec8f52ca92c7))
+
 ## [4.2.1](https://github.com/NelsonBN/test-nuget/compare/v4.2.0...v4.2.1) (2022-07-19)
 
 
