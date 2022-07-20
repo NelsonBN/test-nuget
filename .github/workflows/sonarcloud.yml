@@ -8,12 +8,7 @@ on:
     branches:
       - main
   
-  workflow_run:
-    workflows: ["Tests"]
-    types:
-      - completed
-
-  pull_request:
+  pull_request_target:
     types: [opened, reopened, edited, synchronize]
     branches:
       - main
@@ -29,7 +24,6 @@ jobs:
   sonar-scanner:
     name: "Sonar scanner"
     runs-on: windows-latest
-    if: ( github.event_name == 'workflow_run' && github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' && github.actor == 'dependabot[bot]' ) || ( github.event_name != 'workflow_run' && github.actor != 'dependabot[bot]' )
 
     steps:
     - name: "Setup .NET"
@@ -46,6 +40,8 @@ jobs:
     - name: "Checkout"
       uses: actions/checkout@v3
       with:
+        ref: ${{ github.event.pull_request.head.ref }}
+        repository: ${{ github.event.pull_request.head.repo.full_name }}
         fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       
     - name: "Cache SonarCloud packages"
