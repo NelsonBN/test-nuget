@@ -14,6 +14,12 @@ namespace TestProject.Utils.Tests
 
 
         [Fact]
+        public void Test()
+        {
+            _output.WriteLine($">>> {ExampleUtils.PrintMyTest()}");
+        }
+
+        [Fact]
         public void Request_GetCustomFrameworkVersion_NotBeNullOrWhiteSpace()
         {
             // Arrange && Act
